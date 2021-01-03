@@ -328,7 +328,7 @@
                         <textarea id="message-user" name="search-user" placeholder="Message for User"></textarea>
                         
                      </div>
-                     <button type="submit" class="send-button">SEND</button>
+                     <button type="submit" id="send" class="send-button">SEND</button>
             </div>
         </section>
         <section class="settings">
@@ -354,10 +354,14 @@
                         <li>
                             <select id="timezone" name="time_zone">
                                 <option value=""   selected disabled class="timezone-class">Select Timezone</option>
+                                    <optgroup>
+                                        <option value="CET">Central European Time</option>
+                                        <option value="GMT">GMT</option>
+                                    </optgroup>
                             </select>
                         </li>
                         <li class="save-cancel">
-                            <button type="submit" id="send" class="save-button">SAVE</button>
+                            <button type="submit"  class="save-button">SAVE</button>
                             <button type="submit" id="cancel" class="cancel-button">CANCEL</button>
                         </li>
                     </ul>
